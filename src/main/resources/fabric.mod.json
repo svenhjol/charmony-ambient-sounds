@@ -3,7 +3,7 @@
   "id": "charmony-ambient-sounds",
   "version": "${mod_version}",
 
-  "name": "Charmony ambient sounds",
+  "name": "Charmony Ambient Sounds",
   "description": "Simple ambient sounds for Minecraft. Compatible with vanilla servers such as Realms.",
   "authors": [
     "svenhjol"
@@ -11,9 +11,6 @@
   "icon": "icon.png",
   "license": "MIT",
   "environment": "client",
-  "mixins": [
-    "charmony-ambient-sounds.mixins.json"
-  ],
   "accessWidener": "charmony-ambient-sounds.accesswidener",
 
   "entrypoints": {
