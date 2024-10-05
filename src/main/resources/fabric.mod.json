@@ -4,7 +4,7 @@
   "version": "${mod_version}",
 
   "name": "Charmony ambient sounds",
-  "description": "A client-only ambient sounds mod for Minecraft.",
+  "description": "Simple ambient sounds for Minecraft. Compatible with vanilla servers such as Realms.",
   "authors": [
     "svenhjol"
   ],
