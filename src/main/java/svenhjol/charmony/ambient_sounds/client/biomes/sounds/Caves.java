@@ -43,6 +43,11 @@ public class Caves implements SoundType<BiomeSound> {
             public SoundEvent getSound() {
                 return deepDark;
             }
+
+            @Override
+            public int getBiomeBlend() {
+                return 4;
+            }
         });
 
         // Dripstone caves.
@@ -61,6 +66,11 @@ public class Caves implements SoundType<BiomeSound> {
             @Override
             public SoundEvent getSound() {
                 return dripstone;
+            }
+
+            @Override
+            public int getBiomeBlend() {
+                return 4;
             }
         });
 

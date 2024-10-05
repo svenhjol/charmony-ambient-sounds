@@ -3,6 +3,7 @@ package svenhjol.charmony.ambient_sounds.client.biomes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceKey;
@@ -10,6 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.biome.Biome;
 import svenhjol.charmony.ambient_sounds.client.sound.LoopingSound;
 import svenhjol.charmony.ambient_sounds.client.sound.SoundInstance;
+import svenhjol.charmony.ambient_sounds.helper.BiomeCheckHelper;
 import svenhjol.charmony.ambient_sounds.helper.SettingsHelper;
 
 import java.util.ConcurrentModificationException;
@@ -55,7 +57,15 @@ public abstract class BiomeSound implements SoundInstance {
 
     @Override
     public double getVolumeScaling() {
-        return SettingsHelper.environmentVolumeScaling();
+        return SettingsHelper.biomeVolumeScaling();
+    }
+
+    public int getBiomeBlend() {
+        return Biomes.feature().biomeBlend();
+    }
+
+    public boolean shouldBlendOtherBiomes(BlockPos pos) {
+        return !BiomeCheckHelper.ISOLATED_BIOME.test(getBiomeHolder(pos), getBiomeKey(pos));
     }
 
     @Override
@@ -100,9 +110,9 @@ public abstract class BiomeSound implements SoundInstance {
         }
 
         var pos = player.blockPosition();
-        var blend = (float) Biomes.feature().biomeBlend();
+        var blend = (float) getBiomeBlend();
 
-        if (blend > 0) {
+        if (blend > 0 && shouldBlendOtherBiomes(pos)) {
 
             // Sample points.
             var directions = List.of(

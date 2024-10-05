@@ -43,6 +43,11 @@ public class PaleGarden implements SoundType<BiomeSound> {
             public boolean isValidBiomeCondition(Holder<Biome> holder, ResourceKey<Biome> key) {
                 return BiomeCheckHelper.PALE_GARDEN.test(key);
             }
+
+            @Override
+            public int getBiomeBlend() {
+                return 4;
+            }
         });
 
         // Night sound.
@@ -61,6 +66,11 @@ public class PaleGarden implements SoundType<BiomeSound> {
             @Override
             public boolean isValidBiomeCondition(Holder<Biome> holder, ResourceKey<Biome> key) {
                 return BiomeCheckHelper.PALE_GARDEN.test(key);
+            }
+
+            @Override
+            public int getBiomeBlend() {
+                return 4;
             }
         });
     }

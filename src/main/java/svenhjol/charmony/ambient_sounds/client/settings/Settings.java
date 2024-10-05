@@ -16,7 +16,7 @@ public final class Settings extends ModFeature {
     @Configurable(
         name = "Audio channel",
         description = """
-            The channel that Charmonium will use for playing sounds. Defaults to 'ambient'.
+            The channel that the mod uses for playing sounds. Defaults to 'ambient'.
             Options: music, record, weather, block, hostile, neutral, player, ambient, voice"""
     )
     private static String audioChannel = "ambient";

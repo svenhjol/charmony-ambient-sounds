@@ -56,4 +56,7 @@ public final class BiomeCheckHelper {
 
     public static final Predicate<Holder<Biome>> THE_END =
         holder -> holder.is(BiomeTags.IS_END);
+
+    public static final BiPredicate<Holder<Biome>, ResourceKey<Biome>> ISOLATED_BIOME =
+        (holder, key) -> key.equals(WinterDropBiomes.PALE_GARDEN) || key.equals(Biomes.DEEP_DARK);
 }

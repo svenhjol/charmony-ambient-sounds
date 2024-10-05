@@ -18,55 +18,55 @@ public final class Environment extends ModFeature {
     public Registers registers;
     public Handlers handlers;
 
-    @Configurable(name = "Alien", requireRestart = false, description = """
+    @Configurable(name = "Alien sounds", requireRestart = false, description = """
         If true, plays ambient sounds while anywhere in the End.""")
     private static boolean alien = true;
 
-    @Configurable(name = "Bleak", requireRestart = false, description = """
+    @Configurable(name = "Bleak environment sounds", requireRestart = false, description = """
         If true, plays ambient sounds in cold and/or barren overworld environments.""")
     private static boolean bleak = true;
 
     @Configurable(name = "Cave depth", requireRestart = false, description = """
-    If true, plays more intense cave sounds when below Y 0 and light level is lower than the cave light level.""")
+        If true, plays more intense cave sounds when below Y 0 and light level is lower than the cave light level.""")
     private static boolean caveDepth = true;
 
-    @Configurable(name = "Cave drone", requireRestart = false, description = """
+    @Configurable(name = "Cave drone sounds", requireRestart = false, description = """
         If true, plays a low drone sound when in a cave below the cave drone cutoff.""")
     private static boolean caveDrone = true;
 
     @Configurable(name = "Cave drone cutoff", requireRestart = false, description = """
-    Height at which the cave drone will be silenced.""")
+        Height at which the cave drone will be silenced.""")
     private static int caveDroneCutoff = 48;
 
     @Configurable(name = "Cave light level", requireRestart = false, description = """
         Light level at which cave ambience will be dampened.""")
     private static int caveLightLevel = 10;
 
-    @Configurable(name = "Deepslate", requireRestart = false, description = """
-    If true, plays ambient sounds when the player is underground and near deepslate blocks.""")
+    @Configurable(name = "Deepslate sounds", requireRestart = false, description = """
+        If true, plays ambient sounds when the player is underground and near deepslate blocks.""")
     private static boolean deepslate = true;
 
-    @Configurable(name = "Dry", requireRestart = false, description = """
+    @Configurable(name = "Dry environment sounds", requireRestart = false, description = """
         If true, plays ambient sounds in dry and/or hot overworld environments.""")
     private static boolean dry = true;
 
-    @Configurable(name = "Geode", requireRestart = false, description = """
-    If true, plays ambient sounds from a nearby amethyst geode.""")
+    @Configurable(name = "Geode sounds", requireRestart = false, description = """
+        If true, plays ambient sounds from a nearby amethyst geode.""")
     private static boolean geode = true;
 
-    @Configurable(name = "Gravel", requireRestart = false, description = """
+    @Configurable(name = "Gravel sounds", requireRestart = false, description = """
         If true, plays ambient sounds when the player is underground and near gravel blocks.""")
     private static boolean gravel = true;
 
-    @Configurable(name = "High", requireRestart = false, description = """
-    If true, plays ambient sounds when high up in the overworld.""")
+    @Configurable(name = "High sounds", requireRestart = false, description = """
+        If true, plays ambient sounds when high up in the overworld.""")
     private static boolean high = true;
 
-    @Configurable(name = "Mansion", requireRestart = false, description = """
+    @Configurable(name = "Mansion sounds", requireRestart = false, description = """
         If true, plays ambient sounds while inside a woodland mansion.""")
     private static boolean mansion = true;
 
-    @Configurable(name = "Mineshaft", requireRestart = false, description = """
+    @Configurable(name = "Mineshaft sounds", requireRestart = false, description = """
     If true, plays ambient sounds from a nearby mineshaft.""")
     private static boolean mineshaft = true;
 
@@ -74,16 +74,16 @@ public final class Environment extends ModFeature {
         If true, plays ambient sounds in plains environments at night.""")
     private static boolean nightPlains = true;
 
-    @Configurable(name = "Snowstorm", requireRestart = false, description = """
-    If true, plays ambient sounds when in a cold biome during a thunderstorm.""")
+    @Configurable(name = "Snowstorm sounds", requireRestart = false, description = """
+        If true, plays ambient sounds when in a cold biome during a thunderstorm.""")
     private static boolean snowstorm = true;
 
     @Configurable(name = "Underground water", requireRestart = false, description = """
         If true, plays water sounds from a nearby water source when underground.""")
     private static boolean undergroundWater = true;
 
-    @Configurable(name = "Village", requireRestart = false, description = """
-    If true, plays ambient sounds when a player is inside a village.""")
+    @Configurable(name = "Village sounds", requireRestart = false, description = """
+        If true, plays ambient sounds when a player is inside a village.""")
     private static boolean village = true;
 
     @Configurable(name = "Valid cave ambience dimensions", description = """
