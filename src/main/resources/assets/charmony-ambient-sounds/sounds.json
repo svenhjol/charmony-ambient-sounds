@@ -116,6 +116,16 @@
       {"name": "charmony-ambient-sounds:biomes/sea/sea2"}
     ]
   },
+  "biome.pale_garden.day": {
+    "sounds": [
+      {"name": "charmony-ambient-sounds:biomes/pale_garden/pale_garden_day"}
+    ]
+  },
+  "biome.pale_garden.night": {
+    "sounds": [
+      {"name": "charmony-ambient-sounds:biomes/pale_garden/pale_garden_night"}
+    ]
+  },
   "biome.plains.day": {
     "sounds": [
       {"name": "charmony-ambient-sounds:biomes/plains/plains1"},

@@ -42,6 +42,10 @@ public final class Settings extends ModFeature {
         super(mod);
     }
 
+    public static Settings feature() {
+        return ModFeature.resolve(Settings.class).get();
+    }
+
     public String audioChannel() {
         return audioChannel;
     }

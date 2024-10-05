@@ -2,13 +2,11 @@ package svenhjol.charmony.ambient_sounds.client.environment;
 
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
 import net.minecraft.world.entity.player.Player;
-import svenhjol.charmony.ambient_sounds.AmbientSounds;
 import svenhjol.charmony.ambient_sounds.client.sound.LoopingSound;
-import svenhjol.charmony.scaffold.base.Log;
+
 import java.util.ConcurrentModificationException;
 
 public abstract class LoopingEnvironmentSound extends EnvironmentSound {
-    protected static final Log LOGGER = new Log(AmbientSounds.ID, "LoopingEnvironmentSound");
     protected int numberOfExceptions;
     protected LoopingSound soundInstance;
 
@@ -34,7 +32,7 @@ public abstract class LoopingEnvironmentSound extends EnvironmentSound {
                 getSoundManager().play(this.soundInstance);
             } catch (ConcurrentModificationException e) {
                 if (numberOfExceptions++ < 3) { // Don't spam too much.
-                    LOGGER.debug("Exception in tick");
+                    Environment.feature().log().debug("Exception in tick");
                 }
             }
         }

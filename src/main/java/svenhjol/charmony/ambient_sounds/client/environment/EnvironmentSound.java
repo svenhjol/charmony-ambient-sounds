@@ -51,6 +51,6 @@ public abstract class EnvironmentSound implements SoundInstance {
 
     @Override
     public double getVolumeScaling() {
-        return SettingsHelper.worldAmbienceVolumeScaling();
+        return SettingsHelper.environmentVolumeScaling();
     }
 }

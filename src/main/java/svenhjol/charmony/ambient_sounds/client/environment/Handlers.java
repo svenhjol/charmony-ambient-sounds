@@ -16,19 +16,19 @@ public class Handlers extends Setup<Environment> {
         super(feature);
     }
 
-    public void handleClientTick(Minecraft client) {
+    public void clientTick(Minecraft client) {
         if (handler != null && !client.isPaused()) {
             handler.tick();
         }
     }
 
-    public void handleClientEntityLeave(Entity entity, Level level) {
+    public void clientEntityLeave(Entity entity, Level level) {
         if (entity instanceof LocalPlayer && handler != null) {
             handler.stop();
         }
     }
 
-    public void handleClientEntityJoin(Entity entity, Level level) {
+    public void clientEntityJoin(Entity entity, Level level) {
         if (entity instanceof LocalPlayer player) {
             trySetupSoundHandler(player);
         }

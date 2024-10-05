@@ -4,15 +4,11 @@ import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import org.jetbrains.annotations.Nullable;
-import svenhjol.charmony.ambient_sounds.AmbientSounds;
 import svenhjol.charmony.ambient_sounds.client.sound.SingleSound;
-import svenhjol.charmony.scaffold.base.Log;
 
 import java.util.ConcurrentModificationException;
 
 public abstract class RepeatingEnvironmentSound extends EnvironmentSound {
-    protected static final Log LOGGER = new Log(AmbientSounds.ID, "RepeatingEnvironmentSound");
-
     protected SingleSound soundInstance;
     protected BlockPos pos;
     protected int numberOfExceptions;
@@ -45,7 +41,7 @@ public abstract class RepeatingEnvironmentSound extends EnvironmentSound {
                 }
             } catch (ConcurrentModificationException e) {
                 if (numberOfExceptions++ < 3) { // Don't spam too much.
-                    LOGGER.debug("Exception in manager.play");
+                    Environment.feature().log().debug("Exception in manager.play");
                 }
             }
         }

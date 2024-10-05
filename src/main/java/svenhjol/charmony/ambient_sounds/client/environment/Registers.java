@@ -30,9 +30,9 @@ public class Registers extends Setup<Environment> {
     @Override
     public Runnable boot() {
         return () -> {
-            ClientEntityEvents.ENTITY_LOAD.register(feature().handlers::handleClientEntityJoin);
-            ClientEntityEvents.ENTITY_UNLOAD.register(feature().handlers::handleClientEntityLeave);
-            ClientTickEvents.END_CLIENT_TICK.register(feature().handlers::handleClientTick);
+            ClientEntityEvents.ENTITY_LOAD.register(feature().handlers::clientEntityJoin);
+            ClientEntityEvents.ENTITY_UNLOAD.register(feature().handlers::clientEntityLeave);
+            ClientTickEvents.END_CLIENT_TICK.register(feature().handlers::clientTick);
         };
     }
 }

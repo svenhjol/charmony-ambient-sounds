@@ -2,6 +2,7 @@ package svenhjol.charmony.ambient_sounds.helper;
 
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalBiomeTags;
 import net.minecraft.core.Holder;
+import net.minecraft.data.worldgen.WinterDropBiomes;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biome;
@@ -14,8 +15,8 @@ public final class BiomeCheckHelper {
     public static final Predicate<Holder<Biome>> BADLANDS =
         holder -> holder.is(BiomeTags.IS_BADLANDS);
 
-    public static final Predicate<Holder<Biome>> BEACH =
-        holder -> holder.is(BiomeTags.IS_BEACH);
+    public static final BiPredicate<Holder<Biome>, ResourceKey<Biome>> BEACH =
+        (holder, key) -> key.equals(Biomes.BEACH) || key.equals(Biomes.STONY_SHORE);
 
     public static final Predicate<Holder<Biome>> DESERT =
         holder -> holder.is(ConventionalBiomeTags.IS_DESERT);
@@ -34,6 +35,9 @@ public final class BiomeCheckHelper {
 
     public static final Predicate<Holder<Biome>> OCEAN =
         holder -> holder.is(BiomeTags.IS_OCEAN) || holder.is(ConventionalBiomeTags.IS_OCEAN);
+
+    public static final Predicate<ResourceKey<Biome>> PALE_GARDEN =
+        key -> key.equals(WinterDropBiomes.PALE_GARDEN);
 
     public static final BiPredicate<Holder<Biome>, ResourceKey<Biome>> PLAINS =
         (holder, key) -> key.equals(Biomes.PLAINS) || holder.is(ConventionalBiomeTags.IS_PLAINS);

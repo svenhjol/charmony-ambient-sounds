@@ -1,0 +1,86 @@
+package svenhjol.charmony.ambient_sounds.client.biomes.sounds;
+
+import net.minecraft.core.Holder;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.Biomes;
+import svenhjol.charmony.ambient_sounds.AmbientSounds;
+import svenhjol.charmony.ambient_sounds.client.biomes.BiomeSound;
+import svenhjol.charmony.ambient_sounds.client.sound.SoundHandler;
+import svenhjol.charmony.ambient_sounds.client.sound.SoundType;
+
+import javax.annotation.Nullable;
+
+public class Caves implements SoundType<BiomeSound> {
+    public final SoundEvent deepDark;
+    public final SoundEvent dripstone;
+    public final SoundEvent lush;
+
+    public Caves() {
+        deepDark = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "biome.caves.deep_dark"));
+        dripstone = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "biome.caves.dripstone"));
+        lush = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "biome.caves.lush"));
+    }
+
+    @Override
+    public void addSounds(SoundHandler<BiomeSound> handler) {
+        // Deep dark caves.
+        handler.getSounds().add(new BiomeSound(handler.getPlayer()) {
+            @Override
+            public boolean isValidBiomeCondition(Holder<Biome> holder, ResourceKey<Biome> key) {
+                return key.equals(Biomes.DEEP_DARK);
+            }
+
+            @Override
+            public boolean isValidPlayerCondition() {
+                return true;
+            }
+
+            @Nullable
+            @Override
+            public SoundEvent getSound() {
+                return deepDark;
+            }
+        });
+
+        // Dripstone caves.
+        handler.getSounds().add(new BiomeSound(handler.getPlayer()) {
+            @Override
+            public boolean isValidBiomeCondition(Holder<Biome> holder, ResourceKey<Biome> key) {
+                return key.equals(Biomes.DRIPSTONE_CAVES);
+            }
+
+            @Override
+            public boolean isValidPlayerCondition() {
+                return true;
+            }
+
+            @Nullable
+            @Override
+            public SoundEvent getSound() {
+                return dripstone;
+            }
+        });
+
+        // Lush caves.
+        handler.getSounds().add(new BiomeSound(handler.getPlayer()) {
+            @Override
+            public boolean isValidBiomeCondition(Holder<Biome> holder, ResourceKey<Biome> key) {
+                return key.equals(Biomes.LUSH_CAVES);
+            }
+
+            @Override
+            public boolean isValidPlayerCondition() {
+                return true;
+            }
+
+            @Nullable
+            @Override
+            public SoundEvent getSound() {
+                return lush;
+            }
+        });
+    }
+}
