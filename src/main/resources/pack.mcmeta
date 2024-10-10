@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "Charmony ambient sounds resources",
-    "pack_format": 56
+    "description": "Charmony Ambient Sounds resources",
+    "pack_format": ${pack_version}
   }
 }
