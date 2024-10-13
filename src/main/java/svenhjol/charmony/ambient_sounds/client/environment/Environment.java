@@ -2,18 +2,19 @@ package svenhjol.charmony.ambient_sounds.client.environment;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import svenhjol.charmony.scaffold.annotations.Configurable;
-import svenhjol.charmony.scaffold.annotations.Feature;
-import svenhjol.charmony.scaffold.base.Mod;
-import svenhjol.charmony.scaffold.base.ModFeature;
-import svenhjol.charmony.scaffold.enums.Side;
+import svenhjol.charmony.ambient_sounds.AmbientSounds;
+import svenhjol.charmony.core.annotations.Configurable;
+import svenhjol.charmony.core.annotations.FeatureDefinition;
+import svenhjol.charmony.core.base.Mod;
+import svenhjol.charmony.core.base.SidedFeature;
+import svenhjol.charmony.core.enums.Side;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Feature(side = Side.Client, description = """
+@FeatureDefinition(side = Side.Client, description = """
     Plays ambient sound according to the player's environment.""")
-public final class Environment extends ModFeature {
+public final class Environment extends SidedFeature {
     private final List<ResourceLocation> validCaveDimensions = new ArrayList<>();
     public Registers registers;
     public Handlers handlers;
@@ -102,7 +103,7 @@ public final class Environment extends ModFeature {
      * Helper method for classes to be able to access this feature instance.
      */
     public static Environment feature() {
-        return ModFeature.resolve(Environment.class).get();
+        return AmbientSounds.instance().feature(Environment.class);
     }
 
     public List<String> caveDimensions() {

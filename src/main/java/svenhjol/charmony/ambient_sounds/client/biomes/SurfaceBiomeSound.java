@@ -2,7 +2,7 @@ package svenhjol.charmony.ambient_sounds.client.biomes;
 
 import net.minecraft.world.entity.player.Player;
 import svenhjol.charmony.ambient_sounds.helper.SettingsHelper;
-import svenhjol.charmony.scaffold.helper.WorldHelper;
+import svenhjol.charmony.core.helper.WorldHelper;
 
 public abstract class SurfaceBiomeSound extends BiomeSound {
     protected boolean playWhenThundering;

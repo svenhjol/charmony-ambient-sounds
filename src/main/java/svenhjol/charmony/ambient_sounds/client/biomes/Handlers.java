@@ -6,7 +6,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import svenhjol.charmony.ambient_sounds.client.sound.SoundHandler;
-import svenhjol.charmony.scaffold.base.Setup;
+import svenhjol.charmony.core.base.Setup;
 
 public class Handlers extends Setup<Biomes> {
     private Handler handler;

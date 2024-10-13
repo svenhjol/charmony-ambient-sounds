@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientEntityEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import svenhjol.charmony.ambient_sounds.client.environment.sounds.*;
 import svenhjol.charmony.ambient_sounds.client.sound.SoundType;
-import svenhjol.charmony.scaffold.base.Setup;
+import svenhjol.charmony.core.base.Setup;
 
 public class Registers extends Setup<Environment> {
     public final SoundType<EnvironmentSound> alien = new Alien();

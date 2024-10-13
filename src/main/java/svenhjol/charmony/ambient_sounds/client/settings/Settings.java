@@ -2,17 +2,18 @@ package svenhjol.charmony.ambient_sounds.client.settings;
 
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
-import svenhjol.charmony.scaffold.annotations.Configurable;
-import svenhjol.charmony.scaffold.annotations.Feature;
-import svenhjol.charmony.scaffold.base.Mod;
-import svenhjol.charmony.scaffold.base.ModFeature;
-import svenhjol.charmony.scaffold.enums.Side;
+import svenhjol.charmony.ambient_sounds.AmbientSounds;
+import svenhjol.charmony.core.annotations.Configurable;
+import svenhjol.charmony.core.annotations.FeatureDefinition;
+import svenhjol.charmony.core.base.Mod;
+import svenhjol.charmony.core.base.SidedFeature;
+import svenhjol.charmony.core.enums.Side;
 
 import java.util.Arrays;
 
-@Feature(side = Side.Client, canBeDisabled = false, description = """
+@FeatureDefinition(side = Side.Client, canBeDisabled = false, description = """
     Ambient sound settings.""")
-public final class Settings extends ModFeature {
+public final class Settings extends SidedFeature {
     @Configurable(
         name = "Audio channel",
         description = """
@@ -43,7 +44,7 @@ public final class Settings extends ModFeature {
     }
 
     public static Settings feature() {
-        return ModFeature.resolve(Settings.class).get();
+        return AmbientSounds.instance().feature(Settings.class);
     }
 
     public String audioChannel() {

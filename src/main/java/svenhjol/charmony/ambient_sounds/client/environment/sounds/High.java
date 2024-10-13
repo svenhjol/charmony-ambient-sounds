@@ -9,7 +9,7 @@
  import svenhjol.charmony.ambient_sounds.client.environment.RepeatingEnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.sound.SoundHandler;
  import svenhjol.charmony.ambient_sounds.client.sound.SoundType;
- import svenhjol.charmony.scaffold.helper.WorldHelper;
+ import svenhjol.charmony.core.helper.WorldHelper;
 
  public class High implements SoundType<EnvironmentSound> {
      public final SoundEvent sound;

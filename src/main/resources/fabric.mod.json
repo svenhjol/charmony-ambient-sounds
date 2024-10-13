@@ -15,7 +15,7 @@
 
   "entrypoints": {
     "client": [
-      "svenhjol.charmony.ambient_sounds.fabric.ClientInitializer"
+      "svenhjol.charmony.ambient_sounds.client.ClientInitializer"
     ]
   },
 

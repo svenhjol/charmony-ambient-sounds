@@ -2,19 +2,20 @@ package svenhjol.charmony.ambient_sounds.client.biomes;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import svenhjol.charmony.scaffold.annotations.Configurable;
-import svenhjol.charmony.scaffold.annotations.Feature;
-import svenhjol.charmony.scaffold.base.Mod;
-import svenhjol.charmony.scaffold.base.ModFeature;
-import svenhjol.charmony.scaffold.enums.Side;
+import svenhjol.charmony.ambient_sounds.AmbientSounds;
+import svenhjol.charmony.core.annotations.Configurable;
+import svenhjol.charmony.core.annotations.FeatureDefinition;
+import svenhjol.charmony.core.base.Mod;
+import svenhjol.charmony.core.base.SidedFeature;
+import svenhjol.charmony.core.enums.Side;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Feature(side = Side.Client, description = """
+@FeatureDefinition(side = Side.Client, description = """
     Plays ambient background sound according to the biome and time of day.""")
-public final class Biomes extends ModFeature {
+public final class Biomes extends SidedFeature {
     private final List<ResourceLocation> validDimensions = new ArrayList<>();
 
     public final Registers registers;
@@ -45,7 +46,7 @@ public final class Biomes extends ModFeature {
     }
 
     public static Biomes feature() {
-        return ModFeature.resolve(Biomes.class).get();
+        return AmbientSounds.instance().feature(Biomes.class);
     }
 
     public int biomeBlend() {

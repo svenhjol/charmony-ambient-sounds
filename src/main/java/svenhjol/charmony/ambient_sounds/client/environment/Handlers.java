@@ -7,7 +7,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 import svenhjol.charmony.ambient_sounds.client.sound.SoundHandler;
-import svenhjol.charmony.scaffold.base.Setup;
+import svenhjol.charmony.core.base.Setup;
 
 public class Handlers extends Setup<Environment> {
     private Handler handler;
