@@ -58,7 +58,7 @@
 
              @Override
              public int getDelay() {
-                 return level.random.nextInt(350) + 300;
+                 return level.random.nextInt(1000) + 1000;
              }
 
              @Override
