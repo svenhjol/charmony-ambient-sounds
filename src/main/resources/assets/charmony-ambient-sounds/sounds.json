@@ -309,8 +309,7 @@
   "environment.geode": {
     "sounds": [
       {"name": "charmony-ambient-sounds:environment/geode/geode1"},
-      {"name": "charmony-ambient-sounds:environment/geode/geode2"},
-      {"name": "charmony-ambient-sounds:environment/geode/geode3"}
+      {"name": "charmony-ambient-sounds:environment/geode/geode2"}
     ]
   },
   "environment.gravel": {

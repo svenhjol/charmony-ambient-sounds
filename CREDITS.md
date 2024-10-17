@@ -5,3 +5,5 @@
 - https://freesound.org/people/kvgarlic/sounds/151241/
 - https://freesound.org/people/Marcuspepsi/sounds/450214/
 - https://freesound.org/people/quetzalcontla/sounds/623628/
+- https://freesound.org/people/OGsoundFX/sounds/423144/
+- https://freesound.org/people/everythingsounds/sounds/621784/

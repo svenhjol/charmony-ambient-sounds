@@ -58,7 +58,7 @@
 
              @Override
              public int getDelay() {
-                 return level.random.nextInt(1000) + 1000;
+                 return level.random.nextInt(800) + 800;
              }
 
              @Override
@@ -68,7 +68,7 @@
 
              @Override
              public float getPitch() {
-                 return 0.8f + (0.4f * level.random.nextFloat());
+                 return 0.9f + (0.2f * level.random.nextFloat());
              }
          });
      }
