@@ -1,7 +1,7 @@
 package svenhjol.charmony.ambient_sounds.helper;
 
 import net.minecraft.sounds.SoundSource;
-import svenhjol.charmony.ambient_sounds.client.settings.Settings;
+import svenhjol.charmony.ambient_sounds.client.features.settings.Settings;
 
 public final class SettingsHelper {
     public static SoundSource soundSource() {
