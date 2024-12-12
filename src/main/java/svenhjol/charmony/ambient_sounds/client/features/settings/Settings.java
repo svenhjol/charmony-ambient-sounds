@@ -44,7 +44,7 @@ public final class Settings extends SidedFeature {
     }
 
     public static Settings feature() {
-        return AmbientSounds.instance().feature(Settings.class);
+        return AmbientSounds.instance().sidedFeature(Settings.class);
     }
 
     public String audioChannel() {

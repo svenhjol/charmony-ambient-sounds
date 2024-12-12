@@ -103,7 +103,7 @@ public final class Environment extends SidedFeature {
      * Helper method for classes to be able to access this feature instance.
      */
     public static Environment feature() {
-        return AmbientSounds.instance().feature(Environment.class);
+        return AmbientSounds.instance().sidedFeature(Environment.class);
     }
 
     public List<String> caveDimensions() {

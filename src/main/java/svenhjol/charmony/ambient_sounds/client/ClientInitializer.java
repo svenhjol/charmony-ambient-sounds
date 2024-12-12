@@ -15,9 +15,9 @@ public class ClientInitializer implements ClientModInitializer {
 
         // Bootstrap and run the mod.
         var ambientSounds = AmbientSounds.instance();
-        ambientSounds.addFeature(Settings.class);
-        ambientSounds.addFeature(Biomes.class);
-        ambientSounds.addFeature(Environment.class);
+        ambientSounds.addSidedFeature(Settings.class);
+        ambientSounds.addSidedFeature(Biomes.class);
+        ambientSounds.addSidedFeature(Environment.class);
         ambientSounds.run(Side.Client);
     }
 }

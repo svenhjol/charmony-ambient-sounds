@@ -46,7 +46,7 @@ public final class Biomes extends SidedFeature {
     }
 
     public static Biomes feature() {
-        return AmbientSounds.instance().feature(Biomes.class);
+        return AmbientSounds.instance().sidedFeature(Biomes.class);
     }
 
     public int biomeBlend() {
