@@ -2,7 +2,7 @@ package svenhjol.charmony.ambient_sounds.client.features.biomes;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import svenhjol.charmony.ambient_sounds.AmbientSounds;
+import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
 import svenhjol.charmony.core.annotations.Configurable;
 import svenhjol.charmony.core.annotations.FeatureDefinition;
 import svenhjol.charmony.core.base.Mod;
@@ -46,7 +46,7 @@ public final class Biomes extends SidedFeature {
     }
 
     public static Biomes feature() {
-        return AmbientSounds.instance().sidedFeature(Biomes.class);
+        return AmbientSoundsMod.instance().sidedFeature(Biomes.class);
     }
 
     public int biomeBlend() {

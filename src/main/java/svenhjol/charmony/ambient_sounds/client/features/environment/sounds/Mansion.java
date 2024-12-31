@@ -7,7 +7,7 @@
  import net.minecraft.world.level.block.Blocks;
  import net.minecraft.world.phys.AABB;
  import org.jetbrains.annotations.Nullable;
- import svenhjol.charmony.ambient_sounds.AmbientSounds;
+ import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
  import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.environment.RepeatingEnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
@@ -20,7 +20,7 @@
      public final SoundEvent sound;
 
      public Mansion() {
-         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "environment.mansion"));
+         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.mansion"));
      }
 
      public void addSounds(SoundHandler<EnvironmentSound> handler) {

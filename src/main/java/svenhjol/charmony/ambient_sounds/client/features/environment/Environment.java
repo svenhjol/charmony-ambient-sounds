@@ -2,7 +2,7 @@ package svenhjol.charmony.ambient_sounds.client.features.environment;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import svenhjol.charmony.ambient_sounds.AmbientSounds;
+import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
 import svenhjol.charmony.core.annotations.Configurable;
 import svenhjol.charmony.core.annotations.FeatureDefinition;
 import svenhjol.charmony.core.base.Mod;
@@ -103,7 +103,7 @@ public final class Environment extends SidedFeature {
      * Helper method for classes to be able to access this feature instance.
      */
     public static Environment feature() {
-        return AmbientSounds.instance().sidedFeature(Environment.class);
+        return AmbientSoundsMod.instance().sidedFeature(Environment.class);
     }
 
     public List<String> caveDimensions() {

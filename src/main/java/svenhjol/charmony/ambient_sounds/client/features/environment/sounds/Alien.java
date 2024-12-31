@@ -3,7 +3,7 @@
  import net.minecraft.resources.ResourceLocation;
  import net.minecraft.sounds.SoundEvent;
  import org.jetbrains.annotations.Nullable;
- import svenhjol.charmony.ambient_sounds.AmbientSounds;
+ import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
  import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.environment.RepeatingEnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
@@ -14,7 +14,7 @@
     public final SoundEvent sound;
 
     public Alien() {
-        sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "environment.alien"));
+        sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.alien"));
     }
 
     public void addSounds(SoundHandler<EnvironmentSound> handler) {

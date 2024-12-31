@@ -5,7 +5,7 @@
  import net.minecraft.sounds.SoundEvent;
  import net.minecraft.world.level.block.Blocks;
  import org.jetbrains.annotations.Nullable;
- import svenhjol.charmony.ambient_sounds.AmbientSounds;
+ import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
  import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.environment.RepeatingEnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
@@ -18,7 +18,7 @@
      public final SoundEvent sound;
 
      public UndergroundWater() {
-         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "environment.underground_water"));
+         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.underground_water"));
      }
 
      public void addSounds(SoundHandler<EnvironmentSound> handler) {

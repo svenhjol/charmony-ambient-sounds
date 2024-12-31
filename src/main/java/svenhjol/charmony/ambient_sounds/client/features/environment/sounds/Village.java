@@ -5,7 +5,7 @@
  import net.minecraft.world.entity.npc.Villager;
  import net.minecraft.world.phys.AABB;
  import org.jetbrains.annotations.Nullable;
- import svenhjol.charmony.ambient_sounds.AmbientSounds;
+ import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
  import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.environment.SurfaceEnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
@@ -18,7 +18,7 @@
      public final SoundEvent sound;
 
      public Village() {
-         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "environment.village"));
+         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.village"));
      }
 
      public void addSounds(SoundHandler<EnvironmentSound> handler) {

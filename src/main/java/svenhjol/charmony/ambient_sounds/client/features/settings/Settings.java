@@ -2,7 +2,7 @@ package svenhjol.charmony.ambient_sounds.client.features.settings;
 
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
-import svenhjol.charmony.ambient_sounds.AmbientSounds;
+import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
 import svenhjol.charmony.core.annotations.Configurable;
 import svenhjol.charmony.core.annotations.FeatureDefinition;
 import svenhjol.charmony.core.base.Mod;
@@ -44,7 +44,7 @@ public final class Settings extends SidedFeature {
     }
 
     public static Settings feature() {
-        return AmbientSounds.instance().sidedFeature(Settings.class);
+        return AmbientSoundsMod.instance().sidedFeature(Settings.class);
     }
 
     public String audioChannel() {

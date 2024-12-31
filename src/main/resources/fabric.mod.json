@@ -16,6 +16,9 @@
   "entrypoints": {
     "client": [
         "svenhjol.charmony.ambient_sounds.client.ClientInitializer"
+    ],
+    "modmenu": [
+        "svenhjol.charmony.ambient_sounds.integration.ModMenuPlugin"
     ]
   },
 

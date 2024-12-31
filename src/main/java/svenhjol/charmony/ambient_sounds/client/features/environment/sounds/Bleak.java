@@ -3,7 +3,7 @@
  import net.minecraft.resources.ResourceLocation;
  import net.minecraft.sounds.SoundEvent;
  import org.jetbrains.annotations.Nullable;
- import svenhjol.charmony.ambient_sounds.AmbientSounds;
+ import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
  import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.environment.SurfaceEnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
@@ -15,7 +15,7 @@
      public final SoundEvent sound;
 
      public Bleak() {
-         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "environment.bleak"));
+         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.bleak"));
      }
 
      public void addSounds(SoundHandler<EnvironmentSound> handler) {

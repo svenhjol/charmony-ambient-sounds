@@ -4,7 +4,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.biome.Biomes;
 import org.jetbrains.annotations.Nullable;
-import svenhjol.charmony.ambient_sounds.AmbientSounds;
+import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
 import svenhjol.charmony.ambient_sounds.client.features.environment.Environment;
 import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
 import svenhjol.charmony.ambient_sounds.client.features.environment.LoopingEnvironmentSound;
@@ -15,7 +15,7 @@ public class CaveDepth implements SoundType<EnvironmentSound> {
     public final SoundEvent sound;
 
     public CaveDepth() {
-        sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSounds.ID, "environment.deep_cave"));
+        sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.deep_cave"));
     }
 
     @Override
