@@ -4,7 +4,7 @@ import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
-import svenhjol.charmony.ambient_sounds.helper.SettingsHelper;
+import svenhjol.charmony.ambient_sounds.helpers.SettingsHelper;
 
 import java.util.function.Predicate;
 

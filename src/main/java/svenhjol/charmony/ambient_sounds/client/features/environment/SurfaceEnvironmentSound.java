@@ -1,8 +1,8 @@
 package svenhjol.charmony.ambient_sounds.client.features.environment;
 
 import net.minecraft.world.entity.player.Player;
-import svenhjol.charmony.ambient_sounds.helper.SettingsHelper;
-import svenhjol.charmony.core.helper.WorldHelper;
+import svenhjol.charmony.ambient_sounds.helpers.SettingsHelper;
+import svenhjol.charmony.core.helpers.WorldHelper;
 
 public abstract class SurfaceEnvironmentSound extends RepeatingEnvironmentSound {
     protected SurfaceEnvironmentSound(Player player) {

@@ -1,4 +1,4 @@
-package svenhjol.charmony.ambient_sounds.helper;
+package svenhjol.charmony.ambient_sounds.helpers;
 
 import net.minecraft.sounds.SoundSource;
 import svenhjol.charmony.ambient_sounds.client.features.settings.Settings;

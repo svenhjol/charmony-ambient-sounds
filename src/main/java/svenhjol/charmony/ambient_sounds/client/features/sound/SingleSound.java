@@ -6,7 +6,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
 import org.jetbrains.annotations.Nullable;
-import svenhjol.charmony.ambient_sounds.helper.SettingsHelper;
+import svenhjol.charmony.ambient_sounds.helpers.SettingsHelper;
 
 public class SingleSound extends AbstractTickableSoundInstance {
     private final Player player;

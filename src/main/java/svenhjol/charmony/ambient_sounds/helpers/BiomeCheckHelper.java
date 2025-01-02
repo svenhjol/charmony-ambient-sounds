@@ -1,4 +1,4 @@
-package svenhjol.charmony.ambient_sounds.helper;
+package svenhjol.charmony.ambient_sounds.helpers;
 
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalBiomeTags;
 import net.minecraft.core.Holder;

@@ -8,7 +8,7 @@
  import svenhjol.charmony.ambient_sounds.client.features.environment.RepeatingEnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundType;
- import svenhjol.charmony.ambient_sounds.helper.BiomeCheckHelper;
+ import svenhjol.charmony.ambient_sounds.helpers.BiomeCheckHelper;
 
  public class Alien implements SoundType<EnvironmentSound> {
     public final SoundEvent sound;

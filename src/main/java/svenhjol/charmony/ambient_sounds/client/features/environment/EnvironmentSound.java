@@ -4,7 +4,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.world.entity.player.Player;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundInstance;
-import svenhjol.charmony.ambient_sounds.helper.SettingsHelper;
+import svenhjol.charmony.ambient_sounds.helpers.SettingsHelper;
 
 public abstract class EnvironmentSound implements SoundInstance {
     protected Minecraft client;

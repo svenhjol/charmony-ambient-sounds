@@ -11,8 +11,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.biome.Biome;
 import svenhjol.charmony.ambient_sounds.client.features.sound.LoopingSound;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundInstance;
-import svenhjol.charmony.ambient_sounds.helper.BiomeCheckHelper;
-import svenhjol.charmony.ambient_sounds.helper.SettingsHelper;
+import svenhjol.charmony.ambient_sounds.helpers.BiomeCheckHelper;
+import svenhjol.charmony.ambient_sounds.helpers.SettingsHelper;
 
 import java.util.ConcurrentModificationException;
 import java.util.List;

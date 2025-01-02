@@ -10,7 +10,7 @@ import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentS
 import svenhjol.charmony.ambient_sounds.client.features.environment.RepeatingEnvironmentSound;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundType;
-import svenhjol.charmony.core.helper.WorldHelper;
+import svenhjol.charmony.core.helpers.WorldHelper;
 
 import java.util.Optional;
 

@@ -10,7 +10,7 @@ import svenhjol.charmony.ambient_sounds.client.features.biomes.BiomeSound;
 import svenhjol.charmony.ambient_sounds.client.features.biomes.SurfaceBiomeSound;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundType;
-import svenhjol.charmony.ambient_sounds.helper.BiomeCheckHelper;
+import svenhjol.charmony.ambient_sounds.helpers.BiomeCheckHelper;
 
 import javax.annotation.Nullable;
 

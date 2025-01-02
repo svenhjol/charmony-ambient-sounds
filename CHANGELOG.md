@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0
+
+- Rename helper to helpers.
+- Refactor for Charmony 1.19.0.
+
 ## 1.2.3
 
 - Add ModMenu support.
