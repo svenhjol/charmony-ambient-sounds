@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2
+
+- Fix loop error again I guess.
+
 ## 1.3.1
 
 - Fix loop error in pale garden night ambience.
