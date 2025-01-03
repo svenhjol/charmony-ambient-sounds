@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1
+
+- Fix loop error in pale garden night ambience.
+
 ## 1.3.0
 
 - Rename helper to helpers.
