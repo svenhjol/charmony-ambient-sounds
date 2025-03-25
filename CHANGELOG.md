@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0
+
+- Update for Minecraft 1.21.5.
+
 ## 1.3.2
 
 - Fix loop error again I guess.
