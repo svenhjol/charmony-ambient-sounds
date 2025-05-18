@@ -1,8 +1,8 @@
 package svenhjol.charmony.ambient_sounds;
 
-import svenhjol.charmony.core.annotations.ModDefinition;
+import svenhjol.charmony.api.core.ModDefinition;
 import svenhjol.charmony.core.base.Mod;
-import svenhjol.charmony.core.enums.Side;
+import svenhjol.charmony.api.core.Side;
 
 @ModDefinition(id = AmbientSoundsMod.ID, sides = {Side.Client},
     name = "Ambient sounds",

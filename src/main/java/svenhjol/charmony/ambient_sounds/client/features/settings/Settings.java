@@ -2,16 +2,17 @@ package svenhjol.charmony.ambient_sounds.client.features.settings;
 
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
-import svenhjol.charmony.core.annotations.Configurable;
-import svenhjol.charmony.core.annotations.FeatureDefinition;
+import svenhjol.charmony.api.core.Configurable;
+import svenhjol.charmony.api.core.FeatureDefinition;
 import svenhjol.charmony.core.base.Mod;
 import svenhjol.charmony.core.base.SidedFeature;
-import svenhjol.charmony.core.enums.Side;
+import svenhjol.charmony.api.core.Side;
 
 import java.util.Arrays;
 
 @FeatureDefinition(side = Side.Client, canBeDisabled = false, description = """
     Ambient sound settings.""")
+@SuppressWarnings({"FieldMayBeFinal", "FieldCanBeLocal", "unused"})
 public final class Settings extends SidedFeature {
     @Configurable(
         name = "Audio channel",

@@ -5,7 +5,7 @@ import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
 import svenhjol.charmony.ambient_sounds.client.features.biomes.Biomes;
 import svenhjol.charmony.ambient_sounds.client.features.environment.Environment;
 import svenhjol.charmony.ambient_sounds.client.features.settings.Settings;
-import svenhjol.charmony.core.enums.Side;
+import svenhjol.charmony.api.core.Side;
 
 public class ClientInitializer implements ClientModInitializer {
     @Override

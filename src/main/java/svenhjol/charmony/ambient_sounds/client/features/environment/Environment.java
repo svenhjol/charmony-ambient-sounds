@@ -2,17 +2,18 @@ package svenhjol.charmony.ambient_sounds.client.features.environment;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import svenhjol.charmony.core.annotations.Configurable;
-import svenhjol.charmony.core.annotations.FeatureDefinition;
+import svenhjol.charmony.api.core.Configurable;
+import svenhjol.charmony.api.core.FeatureDefinition;
 import svenhjol.charmony.core.base.Mod;
 import svenhjol.charmony.core.base.SidedFeature;
-import svenhjol.charmony.core.enums.Side;
+import svenhjol.charmony.api.core.Side;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @FeatureDefinition(side = Side.Client, description = """
     Plays ambient sound according to the player's environment.""")
+@SuppressWarnings({"FieldMayBeFinal", "FieldCanBeLocal"})
 public final class Environment extends SidedFeature {
     private final List<ResourceLocation> validCaveDimensions = new ArrayList<>();
     public Registers registers;
