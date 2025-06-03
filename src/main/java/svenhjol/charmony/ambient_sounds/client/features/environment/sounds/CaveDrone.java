@@ -1,20 +1,19 @@
 package svenhjol.charmony.ambient_sounds.client.features.environment.sounds;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import org.jetbrains.annotations.Nullable;
-import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
 import svenhjol.charmony.ambient_sounds.client.features.environment.Environment;
 import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
 import svenhjol.charmony.ambient_sounds.client.features.environment.LoopingEnvironmentSound;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundType;
+import svenhjol.charmony.core.Charmony;
 
 public class CaveDrone implements SoundType<EnvironmentSound> {
     public final SoundEvent sound;
 
     public CaveDrone() {
-        sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.cave_drone"));
+        sound = SoundEvent.createVariableRangeEvent(Charmony.id("environment.cave_drone"));
     }
 
     public void addSounds(SoundHandler<EnvironmentSound> handler) {

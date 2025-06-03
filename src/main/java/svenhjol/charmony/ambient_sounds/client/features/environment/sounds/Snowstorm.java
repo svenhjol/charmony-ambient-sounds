@@ -1,21 +1,20 @@
  package svenhjol.charmony.ambient_sounds.client.features.environment.sounds;
 
- import net.minecraft.resources.ResourceLocation;
  import net.minecraft.sounds.SoundEvent;
  import org.jetbrains.annotations.Nullable;
- import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
  import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.environment.RepeatingEnvironmentSound;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
  import svenhjol.charmony.ambient_sounds.client.features.sound.SoundType;
  import svenhjol.charmony.ambient_sounds.helpers.BiomeCheckHelper;
+ import svenhjol.charmony.core.Charmony;
  import svenhjol.charmony.core.helpers.WorldHelper;
 
  public class Snowstorm implements SoundType<EnvironmentSound> {
      public final SoundEvent sound;
 
      public Snowstorm() {
-         sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.snowstorm"));
+         sound = SoundEvent.createVariableRangeEvent(Charmony.id("environment.snowstorm"));
      }
 
      public void addSounds(SoundHandler<EnvironmentSound> handler) {

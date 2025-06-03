@@ -1,21 +1,20 @@
 package svenhjol.charmony.ambient_sounds.client.features.environment.sounds;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.biome.Biomes;
 import org.jetbrains.annotations.Nullable;
-import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
 import svenhjol.charmony.ambient_sounds.client.features.environment.Environment;
 import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
 import svenhjol.charmony.ambient_sounds.client.features.environment.LoopingEnvironmentSound;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundType;
+import svenhjol.charmony.core.Charmony;
 
 public class CaveDepth implements SoundType<EnvironmentSound> {
     public final SoundEvent sound;
 
     public CaveDepth() {
-        sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.deep_cave"));
+        sound = SoundEvent.createVariableRangeEvent(Charmony.id("environment.deep_cave"));
     }
 
     @Override

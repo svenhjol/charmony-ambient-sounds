@@ -1,15 +1,14 @@
 package svenhjol.charmony.ambient_sounds.client.features.environment.sounds;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.Nullable;
-import svenhjol.charmony.ambient_sounds.AmbientSoundsMod;
 import svenhjol.charmony.ambient_sounds.client.features.environment.EnvironmentSound;
 import svenhjol.charmony.ambient_sounds.client.features.environment.RepeatingEnvironmentSound;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundHandler;
 import svenhjol.charmony.ambient_sounds.client.features.sound.SoundType;
+import svenhjol.charmony.core.Charmony;
 import svenhjol.charmony.core.helpers.WorldHelper;
 
 import java.util.Optional;
@@ -18,7 +17,7 @@ public class Gravel implements SoundType<EnvironmentSound> {
     public final SoundEvent sound;
 
     public Gravel() {
-        sound = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(AmbientSoundsMod.ID, "environment.gravel"));
+        sound = SoundEvent.createVariableRangeEvent(Charmony.id("environment.gravel"));
     }
 
     public void addSounds(SoundHandler<EnvironmentSound> handler) {

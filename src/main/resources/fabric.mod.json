@@ -9,16 +9,13 @@
   "authors": [
     "svenhjol"
   ],
-  "icon": "assets/charmony-ambient-sounds/textures/gui/sprites/icon.png",
+  "icon": "assets/charmony/textures/gui/sprites/charmony-ambient-sounds.png",
   "license": "MIT",
   "environment": "client",
   "accessWidener": "charmony-ambient-sounds.accesswidener",
   "entrypoints": {
     "client": [
-        "svenhjol.charmony.ambient_sounds.client.ClientInitializer"
-    ],
-    "modmenu": [
-        "svenhjol.charmony.ambient_sounds.integration.ModMenuPlugin"
+      "svenhjol.charmony.ambient_sounds.client.ClientInitializer"
     ]
   },
 
