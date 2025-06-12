@@ -68,6 +68,11 @@ public class Caves implements SoundType<BiomeSound> {
             }
 
             @Override
+            public float getVolume() {
+                return 0.6f;
+            }
+
+            @Override
             public int getBiomeBlend() {
                 return 4;
             }

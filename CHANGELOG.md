@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.1
+
+- Reduce volume of the dripstone caves ambience.
+
 ## 1.8.0
 
 - Update for 1.21.6.
