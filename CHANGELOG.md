@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.2
+
+- Add biome sounds for windswept biomes.
+- Reduce the daytime ambient sound of the pale garden by 25%.
+
 ## 1.8.1
 
 - Reduce volume of the dripstone caves ambience.

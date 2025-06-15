@@ -44,6 +44,11 @@ public class PaleGarden implements SoundType<BiomeSound> {
             }
 
             @Override
+            public float getVolume() {
+                return 0.75f;
+            }
+
+            @Override
             public int getBiomeBlend() {
                 return 4;
             }

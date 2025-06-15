@@ -30,7 +30,8 @@ public final class BiomeCheckHelper {
         holder -> holder.is(BiomeTags.IS_JUNGLE) || holder.is(ConventionalBiomeTags.IS_JUNGLE);
 
     public static final Predicate<Holder<Biome>> MOUNTAIN = holder -> holder.is(BiomeTags.IS_MOUNTAIN)
-        || holder.is(ConventionalBiomeTags.IS_MOUNTAIN);
+        || holder.is(ConventionalBiomeTags.IS_MOUNTAIN)
+        || holder.is(ConventionalBiomeTags.IS_WINDSWEPT);
 
     public static final Predicate<Holder<Biome>> OCEAN =
         holder -> holder.is(BiomeTags.IS_OCEAN) || holder.is(ConventionalBiomeTags.IS_OCEAN);
